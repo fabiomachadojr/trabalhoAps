@@ -23,14 +23,11 @@ public class TrabalhoApsTest {
 				"c:\\chromedriver\\chromedriver.exe");
 
 		driver = new ChromeDriver();
-
-		driver.get("C:\\TrabalhoAps\\src\\trabalhoaps\\trabalhoAps.html");
-
 	}
 	
 	@Test
 	public void testSexoMasculino(){
-		
+		driver.get("C:\\TrabalhoAps\\src\\trabalhoaps\\trabalhoAps.html");
 		WebElement campoNome = driver.findElement(By.id("nome"));
 		WebElement campoEndereco = driver.findElement(By.id("endereco"));
 		WebElement campoSexo = driver.findElement(By.id("sexo"));
@@ -48,7 +45,7 @@ public class TrabalhoApsTest {
 
 	@Test
 	public void testSexoFeminino(){
-				
+		driver.get("C:\\TrabalhoAps\\src\\trabalhoaps\\trabalhoAps.html");		
 		WebElement campoNome = driver.findElement(By.id("nome"));
 		WebElement campoEndereco = driver.findElement(By.id("endereco"));
 		WebElement campoSexo = driver.findElement(By.id("sexo"));
@@ -66,7 +63,7 @@ public class TrabalhoApsTest {
 	
 	@Test
 	public void testSexoVazio(){
-				
+		driver.get("C:\\TrabalhoAps\\src\\trabalhoaps\\trabalhoAps.html");		
 		WebElement campoNome = driver.findElement(By.id("nome"));
 		WebElement campoEndereco = driver.findElement(By.id("endereco"));
 		WebElement campoSexo = driver.findElement(By.id("sexo"));
@@ -84,7 +81,7 @@ public class TrabalhoApsTest {
 
 	@Test
 	public void testNome(){
-				
+		driver.get("C:\\TrabalhoAps\\src\\trabalhoaps\\trabalhoAps.html");				
 		WebElement campoNome = driver.findElement(By.id("nome"));
 		WebElement campoEndereco = driver.findElement(By.id("endereco"));
 		WebElement campoSexo = driver.findElement(By.id("sexo"));
@@ -103,7 +100,7 @@ public class TrabalhoApsTest {
 	
 	@Test
 	public void testNomeVazio(){
-		
+		driver.get("C:\\TrabalhoAps\\src\\trabalhoaps\\trabalhoAps.html");		
 		WebElement campoNome = driver.findElement(By.id("nome"));
 		WebElement campoEndereco = driver.findElement(By.id("endereco"));
 		WebElement campoSexo = driver.findElement(By.id("sexo"));
@@ -121,7 +118,7 @@ public class TrabalhoApsTest {
 
 	@Test
 	public void testEnderecoVazio(){
-		
+		driver.get("C:\\TrabalhoAps\\src\\trabalhoaps\\trabalhoAps.html");		
 		WebElement campoNome = driver.findElement(By.id("nome"));
 		WebElement campoEndereco = driver.findElement(By.id("endereco"));
 		WebElement campoSexo = driver.findElement(By.id("sexo"));
@@ -139,7 +136,7 @@ public class TrabalhoApsTest {
 
 	@Test
 	public void testIdadeVazio(){
-		
+		driver.get("C:\\TrabalhoAps\\src\\trabalhoaps\\trabalhoAps.html");		
 		WebElement campoNome = driver.findElement(By.id("nome"));
 		WebElement campoEndereco = driver.findElement(By.id("endereco"));
 		WebElement campoSexo = driver.findElement(By.id("sexo"));
@@ -157,7 +154,7 @@ public class TrabalhoApsTest {
 
 	@Test
 	public void testIdadeNegativo(){
-		
+		driver.get("C:\\TrabalhoAps\\src\\trabalhoaps\\trabalhoAps.html");		
 		WebElement campoNome = driver.findElement(By.id("nome"));
 		WebElement campoEndereco = driver.findElement(By.id("endereco"));
 		WebElement campoSexo = driver.findElement(By.id("sexo"));
@@ -175,7 +172,7 @@ public class TrabalhoApsTest {
 
 	@Test
 	public void testIdade(){
-		
+		driver.get("C:\\TrabalhoAps\\src\\trabalhoaps\\trabalhoAps.html");		
 		WebElement campoNome = driver.findElement(By.id("nome"));
 		WebElement campoEndereco = driver.findElement(By.id("endereco"));
 		WebElement campoSexo = driver.findElement(By.id("sexo"));
@@ -193,7 +190,7 @@ public class TrabalhoApsTest {
 
 	@Test
 	public void testIdadeString(){
-				
+		driver.get("C:\\TrabalhoAps\\src\\trabalhoaps\\trabalhoAps.html");				
 		WebElement campoNome = driver.findElement(By.id("nome"));
 		WebElement campoEndereco = driver.findElement(By.id("endereco"));
 		WebElement campoSexo = driver.findElement(By.id("sexo"));
@@ -211,6 +208,7 @@ public class TrabalhoApsTest {
 
 	@Test
 	public void testTituloPaginaLogin(){
+		driver.get("C:\\TrabalhoAps\\src\\trabalhoaps\\trabalhoAps.html");		
 		String tituloExperado ="Trabalho 2-1"; 
 
 		Assert.assertEquals(tituloExperado,driver.getTitle());

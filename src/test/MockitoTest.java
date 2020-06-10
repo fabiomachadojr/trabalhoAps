@@ -1,4 +1,4 @@
-package trabalhoaps;
+package test;
 
 import static org.mockito.Mockito.when;
 
@@ -9,8 +9,10 @@ import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import trabalhoaps.CorreioService;
+
 @RunWith(MockitoJUnitRunner.class)
-public class TestMockito {
+public class MockitoTest {
 
 	private CorreioService correioServiceMock;
 	
